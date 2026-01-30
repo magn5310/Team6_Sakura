@@ -11,7 +11,7 @@ import Likebtn from "../components/Likebtn.astro";
     </div>
     <h5>{event_by}</h5>
     <h4>
-      <a href="#0">{title}</a>
+      <a href={link}>{title}</a>
     </h4>
     <p class="description">{description}</p>
   </article>
@@ -75,12 +75,12 @@ import Likebtn from "../components/Likebtn.astro";
     margin-left: 0.3rem;
     margin-right: 1rem;
     margin-top: -0.7rem;
-    margin-bottom: -0.5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.8rem !important;
   }
   h5 {
     margin-left: 0.3rem;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
     margin-top: 0.3rem;
   }
 
@@ -107,6 +107,7 @@ import Likebtn from "../components/Likebtn.astro";
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 0.3rem;
   }
 
   .left p {
@@ -117,15 +118,18 @@ import Likebtn from "../components/Likebtn.astro";
 
   .place {
     font-weight: 500;
+   
   }
 
   .day {
     font-size: 0.8rem;
     font-weight: 400;
+  
   }
   .time {
     font-weight: 400;
     font-size: 0.8rem;
+    
   }
 
   .buttom_nav {
